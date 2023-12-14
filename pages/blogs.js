@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
 
     return {
       props: {
-        data: apiResponse.blogs, 
+        data: apiResponse.blogs,
       },
     };
   } catch (error) {
@@ -24,8 +24,6 @@ export const getStaticProps = async () => {
     };
   }
 };
-
-    
 
 const blogs = ({ data }) => {
   return (
@@ -40,7 +38,7 @@ const blogs = ({ data }) => {
           {data.length === 0 ? (
             <p>No data available</p>
           ) : (
-            data.slice(0 , 5).map((el) => (
+            data.slice(0, 5).map((el) => (
               <div
                 className="flex justify-start bg-black   m-5 gap-5   p-4 rounded-xl shadow-xl"
                 key={el.id}
@@ -53,7 +51,6 @@ const blogs = ({ data }) => {
                     {el.title}
                   </h2>
                 </Link>
-             
               </div>
             ))
           )}

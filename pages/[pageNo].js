@@ -52,7 +52,7 @@ const blogsPage = ({ data }) => {
 
             <h2 className="font-bold text-xl text-white">{blog.title}</h2>
             <p className="text-white capitalize">{blog.category}</p>
-            <p className="text-white text-base">{blog.content_text}</p>
+            <p className="text-white text-base ">{blog.content_text}</p>
           </div>
         </div>
       </div>
